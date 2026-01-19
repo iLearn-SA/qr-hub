@@ -72,7 +72,7 @@
     h1{
       margin: 18px 0 10px;
       color: var(--heading);
-      font-size: 36px; /* smaller welcome text */
+      font-size: 36px;
       line-height: 1.18;
     }
 
@@ -114,7 +114,6 @@
       border:1px solid var(--line);
       border-radius: 18px;
       padding: 18px 18px 16px;
-      box-shadow: 0 0 0 rgba(0,0,0,0);
     }
 
     .card h3{
@@ -163,6 +162,17 @@
       margin:0 0 8px;
       font-size: 20px;
       color:#6b6b6b;
+      font-weight: 700;
+    }
+
+    /* module title clickable */
+    .module h4 a{
+      color:#6b6b6b;
+      font-weight: 700;
+    }
+    .module h4 a:hover{
+      color: var(--heading);
+      text-decoration: underline;
     }
 
     .module .meta{
@@ -190,8 +200,9 @@
       font-size: 14px;
     }
 
+    /* under each module: only these 3 links + make them #00b3f0 */
     .module .actions a{
-      color: var(--text);
+      color: var(--heading);
       font-weight: 700;
     }
 
@@ -230,18 +241,16 @@
     <h1>Welcome to Samsung Mobile Academy – Powered by iLearn</h1>
 
     <p class="lede">
-      Congratulations on being chosen as the first <b>Samsung Mobile Academy Trainers</b>.
-      We’re excited to learn with you, build confidence together, and support you as you grow into this role.
-      Use this page as your simple access point to everything you need: <b>Start Here</b>, <b>Assessments</b>,
-      <b>Modules</b>, <b>Wellness Check-In</b>, <b>Game Center</b>, and <b>Support</b>.
-      Enjoy your learning journey — intentionally, consistently, and with momentum.
+      Congratulations on being selected as one of the first <strong>Samsung Mobile Academy Trainers</strong>.
+      This learning journey has been intentionally designed to support your growth, confidence, and impact as a trainer.
+      We are excited to walk this path with you.
     </p>
 
     <div class="howto">
       <b>How to use this page:</b>
       <ol>
-        <li>Tap the section you need (or scan the printed module QR in your notebook).</li>
-        <li>Open your resources (Learner Guide, Workbook, Presentation, Resources).</li>
+        <li>Tap your module below (or scan the printed module QR in your notebook).</li>
+        <li>Open the resources you need (Learner Guide, Workbook, Resources).</li>
         <li>If a link doesn’t open, refresh your browser and try again.</li>
       </ol>
     </div>
@@ -283,40 +292,19 @@
           <a href="#" target="_blank" rel="noopener">Game resources</a>
         </div>
       </div>
-
-      <div class="card" style="grid-column: 1 / -1;">
-        <h3>Support</h3>
-        <p>FAQs, troubleshooting, and contact options.</p>
-        <div class="links">
-          <a href="#" target="_blank" rel="noopener">Open support page</a>
-          <a href="#" target="_blank" rel="noopener">Support folder</a>
-        </div>
-      </div>
     </div>
 
     <h2 class="section-title">Modules</h2>
 
-    <!--
-      EDITING LATER (super easy):
-      - Keep the internal module page links as-is (they never change):
-          ./module-01/  ./module-02/  etc.
-      - Only replace the external links (folder/guide/workbook/presentation/resources/qr image)
-        with Google Drive / SharePoint / LMS links when you’re ready.
-    -->
-
     <!-- MODULE 01 -->
     <div class="module">
       <div>
-        <h4>Module 01: Emotional Intelligence (EQ) – US 252031</h4>
+        <h4><a href="./module-01/">Module 01: Emotional Intelligence (EQ) – US 252031</a></h4>
         <div class="meta">Printed QR in notebook should point to: <b>/qr-hub/samsung-academy/module-01/</b></div>
         <div class="actions">
-          <a href="./module-01/">Open Module 01 page</a>
-          <a href="#" target="_blank" rel="noopener">Module 01 folder</a>
           <a href="#" target="_blank" rel="noopener">Learner Guide</a>
           <a href="#" target="_blank" rel="noopener">Workbook</a>
-          <a href="#" target="_blank" rel="noopener">Presentation</a>
           <a href="#" target="_blank" rel="noopener">Resources</a>
-          <a href="#" target="_blank" rel="noopener">Module 01 QR image</a>
         </div>
       </div>
       <div class="pill">Permanent module link</div>
@@ -325,16 +313,12 @@
     <!-- MODULE 02 -->
     <div class="module">
       <div>
-        <h4>Module 02: Professional Etiquette & Workplace Conduct – US 252042</h4>
+        <h4><a href="./module-02/">Module 02: Professional Etiquette & Workplace Conduct – US 252042</a></h4>
         <div class="meta">Printed QR in notebook should point to: <b>/qr-hub/samsung-academy/module-02/</b></div>
         <div class="actions">
-          <a href="./module-02/">Open Module 02 page</a>
-          <a href="#" target="_blank" rel="noopener">Module 02 folder</a>
           <a href="#" target="_blank" rel="noopener">Learner Guide</a>
           <a href="#" target="_blank" rel="noopener">Workbook</a>
-          <a href="#" target="_blank" rel="noopener">Presentation</a>
           <a href="#" target="_blank" rel="noopener">Resources</a>
-          <a href="#" target="_blank" rel="noopener">Module 02 QR image</a>
         </div>
       </div>
       <div class="pill">Permanent module link</div>
@@ -343,16 +327,12 @@
     <!-- MODULE 03 -->
     <div class="module">
       <div>
-        <h4>Module 03: Communication Skills – US 12433</h4>
+        <h4><a href="./module-03/">Module 03: Communication Skills – US 12433</a></h4>
         <div class="meta">Printed QR in notebook should point to: <b>/qr-hub/samsung-academy/module-03/</b></div>
         <div class="actions">
-          <a href="./module-03/">Open Module 03 page</a>
-          <a href="#" target="_blank" rel="noopener">Module 03 folder</a>
           <a href="#" target="_blank" rel="noopener">Learner Guide</a>
           <a href="#" target="_blank" rel="noopener">Workbook</a>
-          <a href="#" target="_blank" rel="noopener">Presentation</a>
           <a href="#" target="_blank" rel="noopener">Resources</a>
-          <a href="#" target="_blank" rel="noopener">Module 03 QR image</a>
         </div>
       </div>
       <div class="pill">Permanent module link</div>
@@ -361,16 +341,12 @@
     <!-- MODULE 04 -->
     <div class="module">
       <div>
-        <h4>Module 04: Time Management & Productivity – US 15234</h4>
+        <h4><a href="./module-04/">Module 04: Time Management & Productivity – US 15234</a></h4>
         <div class="meta">Printed QR in notebook should point to: <b>/qr-hub/samsung-academy/module-04/</b></div>
         <div class="actions">
-          <a href="./module-04/">Open Module 04 page</a>
-          <a href="#" target="_blank" rel="noopener">Module 04 folder</a>
           <a href="#" target="_blank" rel="noopener">Learner Guide</a>
           <a href="#" target="_blank" rel="noopener">Workbook</a>
-          <a href="#" target="_blank" rel="noopener">Presentation</a>
           <a href="#" target="_blank" rel="noopener">Resources</a>
-          <a href="#" target="_blank" rel="noopener">Module 04 QR image</a>
         </div>
       </div>
       <div class="pill">Permanent module link</div>
@@ -379,16 +355,12 @@
     <!-- MODULE 05 -->
     <div class="module">
       <div>
-        <h4>Module 05: Teamwork & Collaboration – US 252037</h4>
+        <h4><a href="./module-05/">Module 05: Teamwork & Collaboration – US 252037</a></h4>
         <div class="meta">Printed QR in notebook should point to: <b>/qr-hub/samsung-academy/module-05/</b></div>
         <div class="actions">
-          <a href="./module-05/">Open Module 05 page</a>
-          <a href="#" target="_blank" rel="noopener">Module 05 folder</a>
           <a href="#" target="_blank" rel="noopener">Learner Guide</a>
           <a href="#" target="_blank" rel="noopener">Workbook</a>
-          <a href="#" target="_blank" rel="noopener">Presentation</a>
           <a href="#" target="_blank" rel="noopener">Resources</a>
-          <a href="#" target="_blank" rel="noopener">Module 05 QR image</a>
         </div>
       </div>
       <div class="pill">Permanent module link</div>
@@ -397,16 +369,12 @@
     <!-- MODULE 06 -->
     <div class="module">
       <div>
-        <h4>Module 06: Adaptability & Resilience – (Not US Aligned)</h4>
+        <h4><a href="./module-06/">Module 06: Adaptability & Resilience – (Not US Aligned)</a></h4>
         <div class="meta">Printed QR in notebook should point to: <b>/qr-hub/samsung-academy/module-06/</b></div>
         <div class="actions">
-          <a href="./module-06/">Open Module 06 page</a>
-          <a href="#" target="_blank" rel="noopener">Module 06 folder</a>
           <a href="#" target="_blank" rel="noopener">Learner Guide</a>
           <a href="#" target="_blank" rel="noopener">Workbook</a>
-          <a href="#" target="_blank" rel="noopener">Presentation</a>
           <a href="#" target="_blank" rel="noopener">Resources</a>
-          <a href="#" target="_blank" rel="noopener">Module 06 QR image</a>
         </div>
       </div>
       <div class="pill">Permanent module link</div>
@@ -415,16 +383,12 @@
     <!-- MODULE 07 -->
     <div class="module">
       <div>
-        <h4>Module 07: Problem-Solving & Critical Thinking – US 252026</h4>
+        <h4><a href="./module-07/">Module 07: Problem-Solving & Critical Thinking – US 252026</a></h4>
         <div class="meta">Printed QR in notebook should point to: <b>/qr-hub/samsung-academy/module-07/</b></div>
         <div class="actions">
-          <a href="./module-07/">Open Module 07 page</a>
-          <a href="#" target="_blank" rel="noopener">Module 07 folder</a>
           <a href="#" target="_blank" rel="noopener">Learner Guide</a>
           <a href="#" target="_blank" rel="noopener">Workbook</a>
-          <a href="#" target="_blank" rel="noopener">Presentation</a>
           <a href="#" target="_blank" rel="noopener">Resources</a>
-          <a href="#" target="_blank" rel="noopener">Module 07 QR image</a>
         </div>
       </div>
       <div class="pill">Permanent module link</div>
@@ -433,16 +397,12 @@
     <!-- MODULE 08 -->
     <div class="module">
       <div>
-        <h4>Module 08: Presentation Skills – (Not US Aligned)</h4>
+        <h4><a href="./module-08/">Module 08: Presentation Skills – (Not US Aligned)</a></h4>
         <div class="meta">Printed QR in notebook should point to: <b>/qr-hub/samsung-academy/module-08/</b></div>
         <div class="actions">
-          <a href="./module-08/">Open Module 08 page</a>
-          <a href="#" target="_blank" rel="noopener">Module 08 folder</a>
           <a href="#" target="_blank" rel="noopener">Learner Guide</a>
           <a href="#" target="_blank" rel="noopener">Workbook</a>
-          <a href="#" target="_blank" rel="noopener">Presentation</a>
           <a href="#" target="_blank" rel="noopener">Resources</a>
-          <a href="#" target="_blank" rel="noopener">Module 08 QR image</a>
         </div>
       </div>
       <div class="pill">Permanent module link</div>
@@ -451,16 +411,12 @@
     <!-- MODULE 09 -->
     <div class="module">
       <div>
-        <h4>Module 09: Negotiation & Selling Skills – US 10047</h4>
+        <h4><a href="./module-09/">Module 09: Negotiation & Selling Skills – US 10047</a></h4>
         <div class="meta">Printed QR in notebook should point to: <b>/qr-hub/samsung-academy/module-09/</b></div>
         <div class="actions">
-          <a href="./module-09/">Open Module 09 page</a>
-          <a href="#" target="_blank" rel="noopener">Module 09 folder</a>
           <a href="#" target="_blank" rel="noopener">Learner Guide</a>
           <a href="#" target="_blank" rel="noopener">Workbook</a>
-          <a href="#" target="_blank" rel="noopener">Presentation</a>
           <a href="#" target="_blank" rel="noopener">Resources</a>
-          <a href="#" target="_blank" rel="noopener">Module 09 QR image</a>
         </div>
       </div>
       <div class="pill">Permanent module link</div>
@@ -469,16 +425,12 @@
     <!-- MODULE 10 -->
     <div class="module">
       <div>
-        <h4>Module 10: Leadership & Influence – US 120300</h4>
+        <h4><a href="./module-10/">Module 10: Leadership & Influence – US 120300</a></h4>
         <div class="meta">Printed QR in notebook should point to: <b>/qr-hub/samsung-academy/module-10/</b></div>
         <div class="actions">
-          <a href="./module-10/">Open Module 10 page</a>
-          <a href="#" target="_blank" rel="noopener">Module 10 folder</a>
           <a href="#" target="_blank" rel="noopener">Learner Guide</a>
           <a href="#" target="_blank" rel="noopener">Workbook</a>
-          <a href="#" target="_blank" rel="noopener">Presentation</a>
           <a href="#" target="_blank" rel="noopener">Resources</a>
-          <a href="#" target="_blank" rel="noopener">Module 10 QR image</a>
         </div>
       </div>
       <div class="pill">Permanent module link</div>
