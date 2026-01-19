@@ -2,97 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>iLearn – QR Hub</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>iLearn - QR Hub</title>
 
   <style>
     :root{
-      --text:#7c7c7c;
-      --heading:#00b3f0;
+      --blue:#00b3f0;
+      --text:#6f7c85;
+      --heading:#003b5c;
       --bg:#ffffff;
+      --line:#e6e6e6;
     }
 
     body{
       margin:0;
       font-family: Calibri, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
+      background:var(--bg);
+      color:var(--text);
       text-align:center;
-      padding: 40px 20px 0;
     }
 
     .wrap{
-      max-width: 720px;
-      margin: 0 auto;
+      max-width:900px;
+      margin:0 auto;
+      padding:40px 20px;
     }
 
-    .logo{
-      width: 220px;
-      height: auto;
-      margin: 10px auto 20px;
+    img.logo{
+      max-width:140px;
+      margin:0 auto 20px;
       display:block;
     }
 
     h1{
-      color: var(--heading);
-      font-size: 34px;
-      margin: 10px 0 8px;
-      font-weight: 700;
+      color:var(--blue);
+      font-size:34px;
+      margin:10px 0 6px;
     }
 
-    .sub{
-      margin: 0 0 26px;
-      font-size: 16px;
+    .subtitle{
+      font-size:16px;
+      margin-bottom:30px;
     }
 
-    .qr-link{
-      display:inline-block;
-      margin: 10px auto 18px;
-      text-decoration:none;
-    }
-
-    .qr{
-      width: 260px;
-      height: auto;
+    .qr img{
+      max-width:260px;
+      margin:20px auto;
       display:block;
-      border-radius: 8px;
     }
 
-    .menu{
-      margin: 10px auto 30px;
-      display:flex;
-      flex-direction:column;
-      gap: 16px;
-      align-items:center;
+    .links{
+      margin-top:30px;
+      line-height:2.2;
+      font-size:18px;
     }
 
-    .menu a{
-      color: var(--text);
-      font-size: 20px;
+    .links a{
+      color:var(--text);
       text-decoration:none;
     }
 
-    .menu a:hover{
-      color: var(--heading);
-      text-decoration: underline;
+    .links a:hover{
+      color:var(--blue);
     }
 
-    .footer{
-      margin-top: 40px;
-      background: var(--heading);
-      color:#ffffff;
-      padding: 18px 12px;
-      font-size: 18px;
+    footer{
+      margin-top:60px;
+      padding:18px;
+      border-top:1px solid var(--line);
+      color:#777;
+      font-size:14px;
     }
 
-    .footer a{
-      color:#ffffff;
+    footer a{
+      color:var(--blue);
       text-decoration:none;
-      font-weight: 700;
-    }
-
-    .footer a:hover{
-      text-decoration: underline;
     }
   </style>
 </head>
@@ -100,36 +84,42 @@
 <body>
   <div class="wrap">
 
-    <!-- Logo -->
-    <img class="logo" src="assets/ilearn-logo.png" alt="iLearn Logo">
+    <!-- LOGO -->
+    <img
+      src="./assets/ilearn-logo.jpg"
+      alt="iLearn Logo"
+      class="logo"
+    />
 
-    <!-- Title -->
+    <!-- TITLE -->
     <h1>Welcome to iLearn – QR Hub</h1>
-    <p class="sub">Your official digital access point</p>
+    <div class="subtitle">Your official digital access point</div>
 
-    <!-- Clickable QR -->
-    <a class="qr-link" href="https://www.ilearn.co.za" target="_blank" rel="noopener">
-      <img class="qr" src="assets/qr-hub.png" alt="iLearn QR Code">
-    </a>
-
-    <!-- Menu -->
-    <div class="menu">
-      <a href="about-ilearn/" aria-label="About iLearn">About iLearn</a>
-      <a href="samsung-academy/" aria-label="Samsung Academy">Samsung Academy</a>
-      <a href="ai-certs/" aria-label="AI CERTs">AI CERTs®</a>
-      <a href="courses/" aria-label="Courses">Courses</a>
-      <a href="bbbee-compliance/" aria-label="B-BBEE and Compliance">B-BBEE &amp; Compliance</a>
-      <a href="game-center/" aria-label="Game Center">Game Center</a>
-      <a href="support/" aria-label="Support">Support</a>
+    <!-- QR CODE -->
+    <div class="qr">
+      <a href="https://www.ilearn.co.za" target="_blank">
+        <img src="./assets/qr-hub.png" alt="iLearn QR Code">
+      </a>
     </div>
 
-  </div>
+    <!-- MAIN LINKS -->
+    <div class="links">
+      <div><a href="#">About iLearn</a></div>
+      <div><a href="./samsung-academy/">Samsung Academy</a></div>
+      <div><a href="#">AI CERTs®</a></div>
+      <div><a href="#">Courses</a></div>
+      <div><a href="#">B-BBEE &amp; Compliance</a></div>
+      <div><a href="#">Game Center</a></div>
+      <div><a href="#">Support</a></div>
+    </div>
 
-  <!-- Footer -->
-  <div class="footer">
-    <a href="https://www.ilearn.co.za" target="_blank" rel="noopener">www.ilearn.co.za</a>
-    &nbsp; | &nbsp;
-    <a href="tel:0861453276">0861 iLEARN</a>
+    <!-- FOOTER -->
+    <footer>
+      <a href="https://www.ilearn.co.za" target="_blank">www.ilearn.co.za</a>
+      &nbsp;|&nbsp;
+      <a href="tel:0861453276">0861 iLEARN</a>
+    </footer>
+
   </div>
 </body>
 </html>
