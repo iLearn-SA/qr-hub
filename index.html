@@ -1,65 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>iLearn – QR Hub</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
     body {
+      margin: 0;
+      padding: 0;
       font-family: Calibri, Arial, sans-serif;
-      background: #f7f7f7;
+      background-color: #f7f7f7;
       color: #7c7c7c;
       text-align: center;
-      padding: 60px 20px;
+    }
+
+    .wrapper {
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    .logo {
+      max-width: 220px;
+      margin-bottom: 25px;
     }
 
     h1 {
       color: #00b3f0;
-      font-size: 32px;
-      margin-bottom: 10px;
+      font-size: 30px;
+      margin-bottom: 8px;
     }
 
-    h2 {
-      color: #00b3f0;
-      font-size: 20px;
-      margin-top: 40px;
-      margin-bottom: 20px;
+    .subtitle {
+      font-size: 16px;
+      margin-bottom: 30px;
     }
 
-    a {
+    .qr {
+      max-width: 240px;
+      margin: 30px auto;
       display: block;
-      margin: 14px auto;
+    }
+
+    .nav a {
+      display: block;
+      margin: 14px 0;
       font-size: 18px;
       color: #7c7c7c;
       text-decoration: none;
     }
 
-    a:hover {
+    .nav a:hover {
       color: #00b3f0;
     }
 
-    .container {
-      max-width: 420px;
-      margin: auto;
+    footer {
+      background: #00b3f0;
+      color: #ffffff;
+      padding: 18px 10px;
+      font-size: 14px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="container">
+  <div class="wrapper">
+
+    <img src="assets/ilearn-logo.jpg" alt="iLearn Logo" class="logo">
+
     <h1>Welcome to iLearn – QR Hub</h1>
-    <p>Your official digital access point</p>
+    <div class="subtitle">Your official digital access point</div>
 
-    <h2>Explore</h2>
+    <img src="assets/qr-hub.png" alt="iLearn QR Code" class="qr">
 
-    <a href="about/">About iLearn</a>
-    <a href="samsung/">Samsung</a>
-    <a href="ai-certs/">AI Certifications</a>
-    <a href="courses/">Courses</a>
-    <a href="compliance/">B-BBEE & Compliance</a>
-    <a href="support/">Support</a>
+    <div class="nav">
+      <a href="about/">About iLearn</a>
+      <a href="samsung/">Samsung Academy</a>
+      <a href="ai-certs/">AI Certifications</a>
+      <a href="courses/">Courses</a>
+      <a href="bbbee/">B-BBEE & Compliance</a>
+      <a href="support/">Support</a>
+    </div>
+
   </div>
+
+  <footer>
+    www.ilearn.co.za &nbsp; | &nbsp; 0861 iLEARN
+  </footer>
 
 </body>
 </html>
