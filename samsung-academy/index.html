@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Samsung Academy – iLearn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    :root{
+      --text:#7c7c7c;
+      --heading:#00b3f0;
+      --bg:#ffffff;
+      --line:#e6e6e6;
+      --muted:#f5f7f9;
+    }
+
+    body{
+      margin:0;
+      font-family: Calibri, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .wrap{
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 34px 20px 90px;
+    }
+
+    .top{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border-bottom:1px solid var(--line);
+      padding-bottom:14px;
+      gap: 16px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-weight:700;
+      color: var(--heading);
+    }
+
+    .brand small{
+      font-weight:400;
+      color: var(--text);
+    }
+
+    .back{
+      text-decoration:none;
+      color: var(--heading);
+      font-weight:700;
+      white-space:nowrap;
+    }
+
+    h1{
+      color: var(--heading);
+      font-size: 32px;
+      margin: 22px 0 8px;
+    }
+
+    .intro{
+      margin: 0 0 16px;
+      font-size: 16px;
+      line-height: 1.4;
+      max-width: 860px;
+    }
+
+    .note{
+      border:1px solid var(--line);
+      background: var(--muted);
+      border-radius: 14px;
+      padding: 14px 16px;
+      margin: 14px 0 22px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .note b{
+      color:#5f5f5f;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-top: 12px;
+    }
+
+    @media (min-width: 860px){
+      .grid{
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .card{
+      border:1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px;
+      background: #fff;
+    }
+
+    .card h2{
+      margin: 0 0 8px;
+      font-size: 20px;
+      color: var(--heading);
+    }
+
+    .card p{
+      margin: 0 0 12px;
+      font-size: 14px;
+      line-height: 1.35;
+    }
+
+    .links a{
+      display:inline-block;
+      margin: 8px 16px 0 0;
+      color: var(--text);
+      text-decoration:none;
+      font-size: 16px;
+    }
+
+    .links a:hover{
+      color: var(--heading);
+      text-decoration: underline;
+    }
+
+    .section-title{
+      color: var(--heading);
+      font-size: 22px;
+      margin: 26px 0 10px;
+    }
+
+    .module{
+      border:1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px;
+      margin: 12px 0;
+    }
+
+    .module-top{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .module b{
+      color:#5f5f5f;
+      font-size: 18px;
+    }
+
+    .module small{
+      display:block;
+      margin-top:6px;
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .pill{
+      border:1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 12px;
+      background: #fff;
+      color: var(--text);
+      white-space:nowrap;
+    }
+
+    .btnrow{
+      margin-top: 10px;
+    }
+
+    .btnrow a{
+      display:inline-block;
+      margin: 10px 14px 0 0;
+      color: var(--text);
+      text-decoration:none;
+      font-size: 16px;
+    }
+
+    .btnrow a:hover{
+      color: var(--heading);
+      text-decoration: underline;
+    }
+
+    .footer{
+      border-top:1px solid var(--line);
+      margin-top: 26px;
+      padding-top: 14px;
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    .footer a{
+      color: var(--heading);
+      text-decoration:none;
+      font-weight:700;
+    }
+
+    .footer a:hover{
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="top">
+      <div class="brand">
+        Samsung Academy <small>• iLearn</small>
+      </div>
+      <a class="back" href="../">← Back to iLearn QR Hub</a>
+    </div>
+
+    <h1>Welcome to Samsung Academy</h1>
+
+    <p class="intro">
+      This is your official learning access point for Samsung programmes delivered by iLearn.
+      You can open each module digitally (no printing needed). If file storage changes in future
+      (Google Drive → SharePoint → LMS), your printed QR codes will still work because they always point here.
+    </p>
+
+    <div class="note">
+      <b>How to use this page:</b><br>
+      1) Tap your module below (or scan the printed module QR in your notebook).<br>
+      2) Open the resources you need (Learner Guide, Workbook, Slides, Videos).<br>
+      3) If a link doesn’t open, refresh your browser and try again.
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Start Here</h2>
+        <p>Programme overview, schedule, how-to, and support details.</p>
+        <div class="links">
+          <a href="#" target="_blank" rel="noopener">Open folder</a>
+          <a href="#" target="_blank" rel="noopener">Start Here QR</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Assessments</h2>
+        <p>Assessment briefs, rubrics, and submission instructions.</p>
+        <div class="links">
+          <a href="assessments/">Open assessments page</a>
+          <a href="#" target="_blank" rel="noopener">Assessments folder</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Certificates</h2>
+        <p>Certificate guidance and proof-of-completion (if applicable).</p>
+        <div class="links">
+          <a href="certificates/">Open certificates page</a>
+          <a href="#" target="_blank" rel="noopener">Certificates folder</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Support</h2>
+        <p>FAQs, troubleshooting, and contact options.</p>
+        <div class="links">
+          <a href="support/">Open support page</a>
+          <a href="#" target="_blank" rel="noopener">Support folder</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">Modules</div>
+
+    <!-- MODULE 01 -->
+    <div class="module">
+      <div class="module-top">
+        <div>
+          <b>Module 01</b>
+          <small>
+            Printed QR in notebook should point to:<br>
+            <span class="pill">/qr-hub/samsung-academy/module-01/</span>
+          </small>
+        </div>
+        <span class="pill">Permanent module link</span>
+      </div>
+      <div class="btnrow">
+        <a href="module-01/">Open Module 01 page</a>
+        <a href="#" target="_blank" rel="noopener">Module 01 folder</a>
+        <a href="#" target="_blank" rel="noopener">Module 01 QR image</a>
+      </div>
+    </div>
+
+    <!-- MODULE 02 -->
+    <div class="module">
+      <div class="module-top">
+        <div>
+          <b>Module 02</b>
+          <small>
+            Printed QR in notebook should point to:<br>
+            <span class="pill">/qr-hub/samsung-academy/module-02/</span>
+          </small>
+        </div>
+        <span class="pill">Permanent module link</span>
+      </div>
+      <div class="btnrow">
+        <a href="module-02/">Open Module 02 page</a>
+        <a href="#" target="_blank" rel="noopener">Module 02 folder</a>
+        <a href="#" target="_blank" rel="noopener">Module 02 QR image</a>
+      </div>
+    </div>
+
+    <!-- MODULE 03 -->
+    <div class="module">
+      <div class="module-top">
+        <div>
+          <b>Module 03</b>
+          <small>
+            Printed QR in notebook should point to:<br>
+            <span class="pill">/qr-hub/samsung-academy/module-03/</span>
+          </small>
+        </div>
+        <span class="pill">Permanent module link</span>
+      </div>
+      <div class="btnrow">
+        <a href="module-03/">Open Module 03 page</a>
+        <a href="#" target="_blank" rel="noopener">Module 03 folder</a>
+        <a href="#" target="_blank" rel="noopener">Module 03 QR image</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <b>Tip:</b> Keep the printed QR codes in the notebook pointing to the module pages above (GitHub).
+      Then you can switch the storage links (Drive/SharePoint/LMS) anytime without reprinting.<br><br>
+      <a href="../">Back to iLearn QR Hub</a>
+    </div>
+
+  </div>
+</body>
+</html>
