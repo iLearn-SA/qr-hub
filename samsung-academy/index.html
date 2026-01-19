@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Samsung Mobile Academy – Powered by iLearn</title>
+  <title>Samsung Mobile Academy – iLearn</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <style>
@@ -11,86 +11,108 @@
       --heading:#00b3f0;
       --bg:#ffffff;
       --line:#e6e6e6;
-      --soft:#f9f9f9;
+      --card:#fafafa;
     }
 
     body{
       margin:0;
       font-family: Calibri, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      text-align:center;
+      background:var(--bg);
+      color:var(--text);
+    }
+
+    a{
+      color:var(--heading);
+      text-decoration:none;
     }
 
     .container{
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 60px 20px;
+      max-width:1100px;
+      margin:auto;
+      padding:40px 20px 80px;
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border-bottom:1px solid var(--line);
+      padding-bottom:16px;
+      margin-bottom:40px;
+    }
+
+    header img{
+      height:40px;
     }
 
     h1{
-      color: var(--heading);
-      font-size: 34px;
-      margin-bottom: 10px;
+      color:var(--heading);
+      font-size:36px;
+      margin-bottom:10px;
     }
 
     h2{
-      color: var(--heading);
-      font-size: 22px;
-      margin-top: 50px;
-      margin-bottom: 10px;
+      color:var(--heading);
+      margin-top:60px;
     }
 
-    p{
-      font-size: 16px;
-      line-height: 1.6;
-      margin: 12px 0;
+    .intro{
+      max-width:800px;
+      font-size:18px;
+      line-height:1.6;
     }
 
-    .welcome{
-      margin-top: 30px;
-      background: var(--soft);
-      padding: 30px;
-      border-radius: 8px;
+    .note{
+      background:#f5f7f9;
+      padding:20px;
+      border-radius:10px;
+      margin:30px 0;
     }
 
-    .sections{
-      margin-top: 40px;
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+      gap:20px;
+      margin-top:40px;
     }
 
-    .sections a{
-      display:block;
-      text-decoration:none;
-      color: var(--text);
-      font-size: 18px;
-      padding: 14px 0;
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:24px;
     }
 
-    .sections a:hover{
-      color: var(--heading);
+    .card h3{
+      color:var(--heading);
+      margin-top:0;
     }
 
-    .qr{
-      margin: 40px 0;
+    .card a{
+      display:inline-block;
+      margin-right:16px;
+      margin-top:10px;
+      font-weight:600;
     }
 
-    .qr img{
-      max-width: 260px;
-      width: 100%;
-      cursor: pointer;
+    .module{
+      border-bottom:1px solid var(--line);
+      padding:20px 0;
     }
 
     footer{
-      margin-top: 60px;
-      padding: 25px 15px;
-      background: var(--heading);
-      color: #ffffff;
-      font-size: 14px;
+      background:#00b3f0;
+      color:white;
+      text-align:center;
+      padding:20px;
+      position:fixed;
+      bottom:0;
+      left:0;
+      width:100%;
     }
 
     footer a{
-      color:#ffffff;
-      text-decoration:none;
+      color:white;
       font-weight:600;
     }
   </style>
@@ -100,48 +122,167 @@
 
   <div class="container">
 
-    <h1>Welcome to Samsung Mobile Academy</h1>
-    <p><strong>Powered by iLearn</strong></p>
+    <!-- HEADER -->
+    <header>
+      <img src="../assets/ilearn-logo.jpg" alt="iLearn Logo">
+      <a href="../">← Back to iLearn QR Hub</a>
+    </header>
 
-    <div class="welcome">
-      <p>
-        Congratulations on being selected as part of the <strong>first cohort of Samsung Mobile Academy Trainers</strong>.
-      </p>
-      <p>
-        This journey is more than just training — it is an opportunity to grow your skills, deepen your confidence,
-        and become a leader in the Samsung learning ecosystem.
-      </p>
-      <p>
-        We encourage you to explore each section at your own pace, engage fully with the content,
-        check in with yourself along the way, and enjoy the learning experience.
-      </p>
-      <p>
-        You’ve been chosen for a reason — welcome to the start of something meaningful.
-      </p>
+    <!-- INTRO -->
+    <h1>Welcome to Samsung Mobile Academy – Powered by iLearn</h1>
+
+    <p class="intro">
+      Congratulations on being selected as one of the first <strong>Samsung Mobile Academy Trainers</strong>.
+      This learning journey has been intentionally designed to support your growth, confidence, and impact as a trainer.
+      We are excited to walk this path with you.
+    </p>
+
+    <p class="intro">
+      This page is your single digital access point. Each section and module opens the latest learning material
+      without the need for printing. You will also find spaces for reflection, wellbeing check-ins,
+      interactive activities, and a Game Center to keep learning engaging.
+    </p>
+
+    <!-- HOW TO -->
+    <div class="note">
+      <strong>How to use this page:</strong><br>
+      1) Open your module below (or scan the QR code printed in your notebook).<br>
+      2) Choose the resource you need: Learner Guide, Workbook, Presentation, or Resources.<br>
+      3) If a link doesn’t open, refresh your browser and try again.
     </div>
 
-    <div class="qr">
-      <a href="https://www.ilearn.co.za" target="_blank">
-        <img src="../assets/qr-hub.png" alt="Samsung Mobile Academy QR Code">
-      </a>
+    <!-- TOP CARDS -->
+    <div class="grid">
+      <div class="card">
+        <h3>Start Here</h3>
+        <p>Programme overview, schedule, expectations, and support details.</p>
+        <a href="#">Open folder</a>
+        <a href="#">Start Here QR</a>
+      </div>
+
+      <div class="card">
+        <h3>Assessments</h3>
+        <p>Assessment briefs, rubrics, and submission instructions.</p>
+        <a href="#">Open assessments page</a>
+        <a href="#">Assessments folder</a>
+      </div>
+
+      <div class="card">
+        <h3>Certificates</h3>
+        <p>Certificate guidance and proof-of-completion (if applicable).</p>
+        <a href="#">Open certificates page</a>
+        <a href="#">Certificates folder</a>
+      </div>
+
+      <div class="card">
+        <h3>Support</h3>
+        <p>FAQs, troubleshooting, and contact options.</p>
+        <a href="#">Open support page</a>
+        <a href="#">Support folder</a>
+      </div>
+
+      <div class="card">
+        <h3>Wellness Check-In</h3>
+        <p>A space to pause, reflect, and check in with yourself.</p>
+        <a href="#">Open wellness check-in</a>
+      </div>
+
+      <div class="card">
+        <h3>Game Center</h3>
+        <p>Interactive learning activities and engagement challenges.</p>
+        <a href="#">Open Game Center</a>
+      </div>
     </div>
 
-    <div class="sections">
-      <a href="#">About iLearn</a>
-      <a href="#">Samsung Academy</a>
-      <a href="#">AI CERTs®</a>
-      <a href="#">Courses</a>
-      <a href="#">B-BBEE & Compliance</a>
-      <a href="#">Wellness Check-In</a>
-      <a href="#">Game Center</a>
-      <a href="#">Support</a>
+    <!-- MODULES -->
+    <h2>Modules</h2>
+
+    <!-- MODULE 1 -->
+    <div class="module">
+      <strong>Module 1: Emotional Intelligence (EQ) – US 252031</strong><br>
+      <a href="#">Learner Guide</a>
+      <a href="#">Workbook</a>
+      <a href="#">Presentation</a>
+      <a href="#">Resources</a>
+    </div>
+
+    <div class="module">
+      <strong>Module 2: Professional Etiquette & Workplace Conduct – US 252042</strong><br>
+      <a href="#">Learner Guide</a>
+      <a href="#">Workbook</a>
+      <a href="#">Presentation</a>
+      <a href="#">Resources</a>
+    </div>
+
+    <div class="module">
+      <strong>Module 3: Communication Skills – US 12433</strong><br>
+      <a href="#">Learner Guide</a>
+      <a href="#">Workbook</a>
+      <a href="#">Presentation</a>
+      <a href="#">Resources</a>
+    </div>
+
+    <div class="module">
+      <strong>Module 4: Time Management & Productivity – US 15234</strong><br>
+      <a href="#">Learner Guide</a>
+      <a href="#">Workbook</a>
+      <a href="#">Presentation</a>
+      <a href="#">Resources</a>
+    </div>
+
+    <div class="module">
+      <strong>Module 5: Teamwork & Collaboration – US 252037</strong><br>
+      <a href="#">Learner Guide</a>
+      <a href="#">Workbook</a>
+      <a href="#">Presentation</a>
+      <a href="#">Resources</a>
+    </div>
+
+    <div class="module">
+      <strong>Module 6: Adaptability & Resilience – Not US Aligned</strong><br>
+      <a href="#">Learner Guide</a>
+      <a href="#">Workbook</a>
+      <a href="#">Presentation</a>
+      <a href="#">Resources</a>
+    </div>
+
+    <div class="module">
+      <strong>Module 7: Problem-Solving & Critical Thinking – US 252026</strong><br>
+      <a href="#">Learner Guide</a>
+      <a href="#">Workbook</a>
+      <a href="#">Presentation</a>
+      <a href="#">Resources</a>
+    </div>
+
+    <div class="module">
+      <strong>Module 8: Presentation Skills – Not US Aligned</strong><br>
+      <a href="#">Learner Guide</a>
+      <a href="#">Workbook</a>
+      <a href="#">Presentation</a>
+      <a href="#">Resources</a>
+    </div>
+
+    <div class="module">
+      <strong>Module 9: Negotiation & Selling Skills – US 10047</strong><br>
+      <a href="#">Learner Guide</a>
+      <a href="#">Workbook</a>
+      <a href="#">Presentation</a>
+      <a href="#">Resources</a>
+    </div>
+
+    <div class="module">
+      <strong>Module 10: Leadership & Influence – US 120300</strong><br>
+      <a href="#">Learner Guide</a>
+      <a href="#">Workbook</a>
+      <a href="#">Presentation</a>
+      <a href="#">Resources</a>
     </div>
 
   </div>
 
+  <!-- FOOTER -->
   <footer>
-    <a href="https://www.ilearn.co.za" target="_blank">www.ilearn.co.za</a>
-    &nbsp; | &nbsp;
+    <a href="https://www.ilearn.co.za" target="_blank">www.ilearn.co.za</a> &nbsp; | &nbsp;
     <a href="tel:0861453276">0861 iLEARN</a>
   </footer>
 
