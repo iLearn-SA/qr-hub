@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>Module 01 – Emotional Intelligence (EQ)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Module 01 - Samsung Academy</title>
 
   <style>
     :root{
@@ -11,7 +11,7 @@
       --heading:#00b3f0;
       --bg:#ffffff;
       --line:#e6e6e6;
-      --muted:#f5f7f9;
+      --card:#f9f9f9;
     }
 
     body{
@@ -22,146 +22,99 @@
     }
 
     .wrap{
-      max-width: 980px;
+      max-width: 900px;
       margin: 0 auto;
-      padding: 28px 22px 40px;
+      padding: 40px 24px 80px;
     }
 
     .topbar{
       display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      padding: 10px 0 18px;
-      border-bottom: 1px solid var(--line);
-      margin-bottom: 22px;
-    }
-
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      font-size: 18px;
-      font-weight: 700;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      border-bottom:1px solid var(--line);
+      padding-bottom:14px;
     }
 
     .brand a{
       color: var(--heading);
+      font-weight:700;
       text-decoration:none;
     }
 
     .brand .dot{
-      width:6px;
-      height:6px;
-      border-radius:99px;
-      background: var(--text);
-      opacity:.5;
-      display:inline-block;
+      margin: 0 6px;
     }
 
     .back a{
       color: var(--heading);
       text-decoration:none;
-      font-weight: 700;
+      font-weight:600;
     }
 
     h1{
       color: var(--heading);
-      margin: 0 0 10px;
-      font-size: 40px;
-      line-height: 1.15;
+      font-size: 32px;
+      margin: 20px 0 10px;
     }
 
-    .lead{
-      margin: 0 0 18px;
-      font-size: 16px;
-      line-height: 1.6;
-      max-width: 860px;
+    .intro{
+      max-width: 700px;
+      margin-bottom: 30px;
     }
 
-    .note{
-      background: var(--muted);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 18px 18px;
-      margin: 14px 0 24px;
+    .quick{
+      background: var(--card);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 40px;
     }
 
-    .note b{
-      color: #4c4c4c;
+    .quick h3{
+      margin-top:0;
+      color:#555;
     }
 
-    .note ul{
-      margin: 10px 0 0 18px;
-      padding: 0;
-      line-height: 1.7;
-    }
-
-    .grid{
+    .links{
       display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-      margin-top: 10px;
-    }
-
-    @media (max-width: 760px){
-      h1{font-size: 32px;}
-      .grid{grid-template-columns: 1fr;}
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
     }
 
     .card{
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 18px 18px 16px;
-      background: #fff;
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:22px;
     }
 
-    .card h3{
+    .card h2{
+      margin-top:0;
       color: var(--heading);
-      margin: 0 0 8px;
-      font-size: 22px;
+      font-size:20px;
     }
 
     .card p{
-      margin: 0 0 14px;
-      line-height: 1.55;
+      margin-bottom:14px;
     }
 
-    .actions{
-      display:flex;
-      flex-wrap:wrap;
-      gap: 16px;
-      font-weight: 700;
-    }
-
-    .actions a{
-      color: var(--heading);
+    .btn{
+      display:inline-block;
+      padding:10px 18px;
+      border-radius:8px;
+      background: var(--heading);
+      color:#fff;
+      font-weight:600;
       text-decoration:none;
     }
 
-    .actions a:hover{
-      text-decoration: underline;
+    .footer-back{
+      margin-top: 50px;
     }
 
-    .divider{
-      border-top: 1px solid var(--line);
-      margin: 22px 0 18px;
-    }
-
-    .footer{
-      margin-top: 18px;
-      font-size: 14px;
-      line-height: 1.6;
-    }
-
-    .footer a{
+    .footer-back a{
       color: var(--heading);
       text-decoration:none;
-      font-weight: 700;
-    }
-
-    .footer a:hover{
-      text-decoration: underline;
+      font-weight:600;
     }
   </style>
 </head>
@@ -172,7 +125,7 @@
     <div class="topbar">
       <div class="brand">
         <a href="../">Samsung Academy</a>
-        <span class="dot"></span>
+        <span class="dot">•</span>
         <span>iLearn</span>
       </div>
 
@@ -183,61 +136,67 @@
 
     <h1>Module 01: Emotional Intelligence (EQ) – US 252031</h1>
 
-    <p class="lead">
-      This module focuses on developing self-awareness, emotional regulation, and interpersonal effectiveness
-      to strengthen your impact as a Samsung Mobile Academy Trainer.
+    <p class="intro">
+      This module focuses on developing self-awareness, emotional regulation,
+      and interpersonal effectiveness to strengthen your impact as a
+      Samsung Mobile Academy Trainer.
     </p>
 
-    <div class="note">
-      <b>Quick steps:</b>
+    <div class="quick">
+      <h3>Quick steps</h3>
       <ul>
-        <li>Open the Learner Guide first (overview + key concepts).</li>
-        <li>Use the Workbook during/after facilitation (activities + reflection).</li>
-        <li>Resources are extras (slides, videos, templates, reading).</li>
+        <li>Open the <strong>Learner Guide</strong> first.</li>
+        <li>Use the <strong>Workbook</strong> during and after facilitation.</li>
+        <li>Explore <strong>Resources</strong> as needed.</li>
       </ul>
     </div>
 
-    <div class="grid">
+    <div class="links">
+
+      <!-- Learner Guide -->
       <div class="card">
-        <h3>Learner Guide</h3>
+        <h2>Learner Guide</h2>
         <p>Read-only content for learning, preparation, and reference.</p>
-        <div class="actions">
-          <a href="#" target="_blank" rel="noopener">Open Learner Guide</a>
-        </div>
+        <a class="btn"
+           href="https://ilearnonlinesa-my.sharepoint.com/:b:/g/personal/nerissac_ilearn_co_za/IQBJFxBzp5ZYSodAiSGtvLk2AbSimKYVc8TYwDhs2mC3bhk?e=deAo9I"
+           target="_blank" rel="noopener">
+          Open Learner Guide
+        </a>
       </div>
 
+      <!-- Workbook -->
       <div class="card">
-        <h3>Workbook</h3>
-        <p>Activities, exercises, and practical application tasks.</p>
-        <div class="actions">
-          <a href="#" target="_blank" rel="noopener">Open Workbook</a>
-        </div>
+        <h2>Workbook</h2>
+        <p>Activities, exercises, and reflection tasks.</p>
+        <a class="btn" href="#" target="_blank" rel="noopener">
+          Open Workbook
+        </a>
       </div>
 
+      <!-- Resources -->
       <div class="card">
-        <h3>Resources</h3>
-        <p>Slides, videos, templates, and any extra supporting material.</p>
-        <div class="actions">
-          <a href="#" target="_blank" rel="noopener">Open Resources</a>
-        </div>
+        <h2>Resources</h2>
+        <p>Slides, videos, templates, and additional materials.</p>
+        <a class="btn" href="#" target="_blank" rel="noopener">
+          Open Resources
+        </a>
       </div>
 
+      <!-- Notes -->
       <div class="card">
-        <h3>Notes</h3>
-        <p>Personal notes, reflections, and key takeaways for this module.</p>
-        <div class="actions">
-          <a href="#" target="_blank" rel="noopener">Open Notes</a>
-        </div>
+        <h2>Notes</h2>
+        <p>Personal notes and reflections.</p>
+        <a class="btn" href="#" target="_blank" rel="noopener">
+          Open Notes
+        </a>
       </div>
+
     </div>
 
-    <div class="divider"></div>
-
-    <div class="footer">
-      <a href="../">Back to Samsung Academy</a>
+    <div class="footer-back">
+      <a href="../">← Back to Samsung Academy</a>
     </div>
 
   </div>
 </body>
 </html>
-
