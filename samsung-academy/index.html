@@ -31,7 +31,6 @@
       padding:26px 18px 44px;
     }
 
-    /* Top bar */
     .topbar{
       display:flex;
       align-items:center;
@@ -57,7 +56,6 @@
       width:6px;height:6px;
       background:var(--heading);
       border-radius:50%;
-      margin:0 2px;
     }
     .back a{
       color:var(--heading);
@@ -66,13 +64,11 @@
     }
     .back a:hover{text-decoration:underline}
 
-    /* Headings */
     h1{
       margin:16px 0 8px;
       color:var(--heading);
       font-size:44px;
       line-height:1.05;
-      letter-spacing:-0.5px;
       font-weight:700;
     }
     .lead{
@@ -82,7 +78,6 @@
       max-width:920px;
     }
 
-    /* Info box */
     .info{
       background:var(--muted);
       border:1px solid var(--line);
@@ -90,14 +85,7 @@
       padding:18px 20px;
       margin:18px 0 22px;
     }
-    .info strong{color:#5e5e5e}
-    .info ol{
-      margin:10px 0 0 20px;
-      padding:0;
-      line-height:1.6;
-    }
 
-    /* Cards grid */
     .grid{
       display:grid;
       grid-template-columns:1fr 1fr;
@@ -114,7 +102,6 @@
       border-radius:var(--radius);
       box-shadow:var(--shadow);
       padding:18px 20px 16px;
-      min-height:120px;
     }
     .card h3{
       margin:0 0 8px;
@@ -127,39 +114,26 @@
       line-height:1.55;
       font-size:16px;
     }
-    .actions{
-      display:flex;
-      gap:18px;
-      flex-wrap:wrap;
-    }
-    .linkbtn{
-      color:#6b6b6b;
-      text-decoration:none;
-      font-weight:700;
-    }
-    .linkbtn:hover{color:var(--heading); text-decoration:underline}
 
-    /* Modules section */
     h2{
       margin:18px 0 12px;
       color:var(--heading);
       font-size:30px;
       font-weight:700;
     }
+
     .module{
       border:1px solid var(--line);
       border-radius:var(--radius);
       box-shadow:var(--shadow);
       padding:18px 20px 16px;
       margin-bottom:16px;
-      background:#fff;
     }
     .module-head{
       display:flex;
-      align-items:flex-start;
       justify-content:space-between;
-      gap:14px;
       flex-wrap:wrap;
+      gap:14px;
     }
     .module-title{
       margin:0;
@@ -177,24 +151,20 @@
     }
     .pill{
       border:1px solid var(--line);
-      background:#fff;
       padding:8px 12px;
       border-radius:999px;
       font-size:13px;
       color:#7a7a7a;
-      white-space:nowrap;
     }
     .module-sub{
       margin:8px 0 12px;
       font-size:14px;
       color:#8a8a8a;
     }
-
     .module-links{
       display:flex;
       gap:22px;
       flex-wrap:wrap;
-      margin-top:8px;
     }
     .module-links a{
       color:var(--heading);
@@ -203,12 +173,6 @@
       font-size:15px;
     }
     .module-links a:hover{text-decoration:underline}
-    .disabled{
-      color:#b7c7cf;
-      font-weight:700;
-      font-size:15px;
-      cursor:default;
-    }
 
     .footer{
       margin-top:22px;
@@ -220,19 +184,18 @@
       text-decoration:none;
       font-weight:700;
     }
-    .footer a:hover{text-decoration:underline}
   </style>
 </head>
 
 <body>
   <div class="wrap">
+
     <div class="topbar">
       <div class="brand">
         <a href="./">Samsung Academy</a>
         <span class="dot"></span>
         <span>iLearn</span>
       </div>
-
       <div class="back">
         <a href="../">← Back to iLearn QR Hub</a>
       </div>
@@ -241,8 +204,10 @@
     <h1>Welcome to Samsung Mobile Academy – Powered by iLearn</h1>
 
     <p class="lead">
-      Congratulations on being selected as one of the first <strong>Samsung Mobile Academy Trainers</strong>.
-      This learning journey has been intentionally designed to support your growth, confidence, and impact as a trainer.
+      Congratulations on being selected as one of the first
+      <strong>Samsung Mobile Academy Trainers</strong>.
+      This learning journey has been intentionally designed to support your
+      growth, confidence, and impact as a trainer.
       We are excited to walk this path with you.
     </p>
 
@@ -259,200 +224,41 @@
       <div class="card">
         <h3>Start Here</h3>
         <p>Programme overview, schedule, how-to, and key info for trainers.</p>
-        <div class="actions">
-          <a class="linkbtn" href="#" target="_blank" rel="noopener">Open folder</a>
-          <a class="linkbtn" href="#" target="_blank" rel="noopener">Start Here QR</a>
-        </div>
       </div>
 
       <div class="card">
         <h3>Assessments</h3>
         <p>Assessment briefs, rubrics, and submission instructions.</p>
-        <div class="actions">
-          <a class="linkbtn" href="#" target="_blank" rel="noopener">Open assessments page</a>
-          <a class="linkbtn" href="#" target="_blank" rel="noopener">Assessments folder</a>
-        </div>
       </div>
 
       <div class="card">
         <h3>Wellness Check-In</h3>
         <p>A quick moment to reflect, reset, and stay balanced during the programme.</p>
-        <div class="actions">
-          <a class="linkbtn" href="#" target="_blank" rel="noopener">Open check-in</a>
-          <a class="linkbtn" href="#" target="_blank" rel="noopener">Wellness folder</a>
-        </div>
       </div>
 
       <div class="card">
         <h3>Game Center</h3>
         <p>Light learning games, challenges, and fun extras to keep energy high.</p>
-        <div class="actions">
-          <a class="linkbtn"
-             href="https://ilearnonlinesa-my.sharepoint.com/:u:/g/personal/nerissac_ilearn_co_za/IQAh6z79PJ7MQJ77KSLkKE5SAbcxlWhnRrssUlvJbe0pHuM?e=cBeMl6"
-             target="_blank" rel="noopener">Open games</a>
-        </div>
       </div>
     </div>
 
     <h2>Modules</h2>
 
-    <!-- Module 01 -->
-    <div class="module" id="module-01">
+    <div class="module">
       <div class="module-head">
         <p class="module-title">
           <a href="./module-01/">Module 01: Emotional Intelligence (EQ) – US 252031</a>
         </p>
         <span class="pill">Permanent module link</span>
       </div>
-      <div class="module-sub">Printed QR in notebook should point to: <strong>/qr-hub/samsung-academy/module-01/</strong></div>
+      <div class="module-sub">
+        Printed QR in notebook should point to:
+        <strong>/qr-hub/samsung-academy/module-01/</strong>
+      </div>
       <div class="module-links">
-        <a href="https://ilearnonlinesa-my.sharepoint.com/:b:/g/personal/nerissac_ilearn_co_za/IQBJFxBzp5ZYSodAiSGtvLk2AbSimKYVc8TYwDhs2mC3bhk?e=deAo9I" target="_blank" rel="noopener">Learner Guide</a>
-        <a href="https://ilearnonlinesa-my.sharepoint.com/:b:/g/personal/nerissac_ilearn_co_za/IQBvZZForUiVQKdqnVuYEwgiARa9dzvAEJT6N4nvKuZtXlU?e=raAt8H" target="_blank" rel="noopener">Workbook</a>
-        <span class="disabled" data-disabled="true">Resources</span>
-      </div>
-    </div>
-
-    <!-- Module 02 -->
-    <div class="module" id="module-02">
-      <div class="module-head">
-        <p class="module-title">
-          <a href="./module-02/">Module 02: Professional Etiquette &amp; Workplace Conduct – US 252042</a>
-        </p>
-        <span class="pill">Permanent module link</span>
-      </div>
-      <div class="module-sub">Printed QR in notebook should point to: <strong>/qr-hub/samsung-academy/module-02/</strong></div>
-      <div class="module-links">
-        <span class="disabled">Learner Guide</span>
-        <span class="disabled">Workbook</span>
-        <span class="disabled">Resources</span>
-      </div>
-    </div>
-
-    <!-- Module 03 -->
-    <div class="module" id="module-03">
-      <div class="module-head">
-        <p class="module-title">
-          <a href="./module-03/">Module 03: Communication Skills – US 12433</a>
-        </p>
-        <span class="pill">Permanent module link</span>
-      </div>
-      <div class="module-sub">Printed QR in notebook should point to: <strong>/qr-hub/samsung-academy/module-03/</strong></div>
-      <div class="module-links">
-        <span class="disabled">Learner Guide</span>
-        <span class="disabled">Workbook</span>
-        <span class="disabled">Resources</span>
-      </div>
-    </div>
-
-    <!-- Module 04 -->
-    <div class="module" id="module-04">
-      <div class="module-head">
-        <p class="module-title">
-          <a href="./module-04/">Module 04: Time Management &amp; Productivity – US 15234</a>
-        </p>
-        <span class="pill">Permanent module link</span>
-      </div>
-      <div class="module-sub">Printed QR in notebook should point to: <strong>/qr-hub/samsung-academy/module-04/</strong></div>
-      <div class="module-links">
-        <span class="disabled">Learner Guide</span>
-        <span class="disabled">Workbook</span>
-        <span class="disabled">Resources</span>
-      </div>
-    </div>
-
-    <!-- Module 05 -->
-    <div class="module" id="module-05">
-      <div class="module-head">
-        <p class="module-title">
-          <a href="./module-05/">Module 05: Teamwork &amp; Collaboration – US 252037</a>
-        </p>
-        <span class="pill">Permanent module link</span>
-      </div>
-      <div class="module-sub">Printed QR in notebook should point to: <strong>/qr-hub/samsung-academy/module-05/</strong></div>
-      <div class="module-links">
-        <span class="disabled">Learner Guide</span>
-        <span class="disabled">Workbook</span>
-        <span class="disabled">Resources</span>
-      </div>
-    </div>
-
-    <!-- Module 06 -->
-    <div class="module" id="module-06">
-      <div class="module-head">
-        <p class="module-title">
-          <a href="./module-06/">Module 06: Adaptability &amp; Resilience</a>
-        </p>
-        <span class="pill">Permanent module link</span>
-      </div>
-      <div class="module-sub">Printed QR in notebook should point to: <strong>/qr-hub/samsung-academy/module-06/</strong></div>
-      <div class="module-links">
-        <span class="disabled">Learner Guide</span>
-        <span class="disabled">Workbook</span>
-        <span class="disabled">Resources</span>
-      </div>
-    </div>
-
-    <!-- Module 07 -->
-    <div class="module" id="module-07">
-      <div class="module-head">
-        <p class="module-title">
-          <a href="./module-07/">Module 07: Problem-Solving &amp; Critical Thinking – US 252026</a>
-        </p>
-        <span class="pill">Permanent module link</span>
-      </div>
-      <div class="module-sub">Printed QR in notebook should point to: <strong>/qr-hub/samsung-academy/module-07/</strong></div>
-      <div class="module-links">
-        <span class="disabled">Learner Guide</span>
-        <span class="disabled">Workbook</span>
-        <span class="disabled">Resources</span>
-      </div>
-    </div>
-
-    <!-- Module 08 -->
-    <div class="module" id="module-08">
-      <div class="module-head">
-        <p class="module-title">
-          <a href="./module-08/">Module 08: Presentation Skills</a>
-        </p>
-        <span class="pill">Permanent module link</span>
-      </div>
-      <div class="module-sub">Printed QR in notebook should point to: <strong>/qr-hub/samsung-academy/module-08/</strong></div>
-      <div class="module-links">
-        <span class="disabled">Learner Guide</span>
-        <span class="disabled">Workbook</span>
-        <span class="disabled">Resources</span>
-      </div>
-    </div>
-
-    <!-- Module 09 -->
-    <div class="module" id="module-09">
-      <div class="module-head">
-        <p class="module-title">
-          <a href="./module-09/">Module 09: Negotiation &amp; Selling Skills – US 10047</a>
-        </p>
-        <span class="pill">Permanent module link</span>
-      </div>
-      <div class="module-sub">Printed QR in notebook should point to: <strong>/qr-hub/samsung-academy/module-09/</strong></div>
-      <div class="module-links">
-        <span class="disabled">Learner Guide</span>
-        <span class="disabled">Workbook</span>
-        <span class="disabled">Resources</span>
-      </div>
-    </div>
-
-    <!-- Module 10 -->
-    <div class="module" id="module-10">
-      <div class="module-head">
-        <p class="module-title">
-          <a href="./module-10/">Module 10: Leadership &amp; Influence – US 120300</a>
-        </p>
-        <span class="pill">Permanent module link</span>
-      </div>
-      <div class="module-sub">Printed QR in notebook should point to: <strong>/qr-hub/samsung-academy/module-10/</strong></div>
-      <div class="module-links">
-        <span class="disabled">Learner Guide</span>
-        <span class="disabled">Workbook</span>
-        <span class="disabled">Resources</span>
+        <a href="https://ilearnonlinesa-my.sharepoint.com/:b:/g/personal/nerissac_ilearn_co_za/IQBJFxBzp5ZYSodAiSGtvLk2AbSimKYVc8TYwDhs2mC3bhk?e=deAo9I" target="_blank">Learner Guide</a>
+        <a href="https://ilearnonlinesa-my.sharepoint.com/:b:/g/personal/nerissac_ilearn_co_za/IQBvZZForUiVQKdqnVuYEwgiARa9dzvAEJT6N4nvKuZtXlU?e=raAt8H" target="_blank">Workbook</a>
+        <a href="https://ilearnonlinesa-my.sharepoint.com/:p:/g/personal/nerissac_ilearn_co_za/IQC7PfezbMHQQbZwboXjsbtvAamxn912myU0yRjPP0aR5z0?e=Ch0Ud9" target="_blank">Resources</a>
       </div>
     </div>
 
