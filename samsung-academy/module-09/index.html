@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Module 09 – Samsung Mobile Academy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    :root{
+      --text:#7c7c7c;
+      --heading:#00b3f0;
+      --bg:#ffffff;
+      --line:#e6e6e6;
+      --soft:#f7f7f9;
+    }
+
+    body{
+      margin:0;
+      font-family: Calibri, Arial, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+    }
+
+    .wrap{
+      max-width:1000px;
+      margin:auto;
+      padding:32px 20px 60px;
+    }
+
+    .topbar{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-bottom:24px;
+    }
+
+    .brand a{
+      color:var(--heading);
+      text-decoration:none;
+      font-weight:700;
+    }
+
+    .brand .dot{
+      margin:0 6px;
+      color:#999;
+    }
+
+    .back a{
+      color:var(--heading);
+      text-decoration:none;
+      font-weight:600;
+    }
+
+    h1{
+      color:var(--heading);
+      margin-bottom:8px;
+    }
+
+    .intro{
+      max-width:720px;
+      margin-bottom:24px;
+    }
+
+    .box{
+      background:var(--soft);
+      border-radius:14px;
+      padding:20px;
+      margin-bottom:28px;
+    }
+
+    .box h3{
+      margin-top:0;
+      color:#555;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:20px;
+    }
+
+    .card h4{
+      margin-top:0;
+      color:var(--heading);
+    }
+
+    .links a{
+      display:inline-block;
+      margin-right:16px;
+      margin-top:8px;
+      color:var(--heading);
+      font-weight:600;
+      text-decoration:none;
+    }
+
+    .footer-back{
+      margin-top:40px;
+    }
+
+    .footer-back a{
+      color:var(--heading);
+      font-weight:700;
+      text-decoration:none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- Top Navigation -->
+    <div class="topbar">
+      <div class="brand">
+        <a href="../">Samsung Academy</a>
+        <span class="dot">•</span>
+        <span>iLearn</span>
+      </div>
+
+      <div class="back">
+        <a href="../">← Back to Samsung Academy</a>
+      </div>
+    </div>
+
+    <!-- Module Title -->
+    <h1>Module 09: Customer Service Excellence</h1>
+
+    <p class="intro">
+      This module focuses on delivering excellent customer service, building positive customer
+      experiences, handling queries professionally, and representing the Samsung brand with confidence.
+    </p>
+
+    <!-- Quick Steps -->
+    <div class="box">
+      <h3>Quick steps:</h3>
+      <ul>
+        <li>Start with the <strong>Learner Guide</strong> to understand customer service principles.</li>
+        <li>Use the <strong>Workbook</strong> to practise real-world service scenarios.</li>
+        <li>Explore <strong>Resources</strong> for tools and examples to enhance service delivery.</li>
+      </ul>
+    </div>
+
+    <!-- Resources -->
+    <div class="grid">
+
+      <div class="card">
+        <h4>Learner Guide</h4>
+        <p>Core principles and best practices for customer service excellence.</p>
+        <div class="links">
+          <a href="#" target="_blank">Open Learner Guide</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h4>Workbook</h4>
+        <p>Activities and scenarios to apply customer service skills.</p>
+        <div class="links">
+          <a href="#" target="_blank">Open Workbook</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h4>Resources</h4>
+        <p>Templates, examples, and supporting customer service materials.</p>
+        <div class="links">
+          <a href="#" target="_blank">Open Resources</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Back -->
+    <div class="footer-back">
+      <a href="../">← Back to Samsung Academy</a>
+    </div>
+
+  </div>
+</body>
+</html>
